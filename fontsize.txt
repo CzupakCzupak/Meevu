@@ -1,0 +1,6 @@
+heading primary fs72
+heading secondary fs56
+heading tertiary fs40
+heading quaternary fs32
+subtitle fs16
+desc fs24

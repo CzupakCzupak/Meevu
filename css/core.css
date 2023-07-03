@@ -1,0 +1,41 @@
+.heading-primary{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 78px;
+}
+
+.heading-secondary{
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.heading-quaternary{
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+}
+
+.white-font{
+    color: #ffffff;
+}
+
+.black-font{
+    color: #141414;
+}
+
+.gray-font{
+    color: #656565;
+}
+
+.gray-light{
+    color: #e6e6e6;
+}
+
+.white-dark{
+    color: #F1F1F1;
+}
+
+.white-darker{
+    color: #f9f9f9;
+}
