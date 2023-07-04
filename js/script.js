@@ -1,3 +1,5 @@
+
+
 const detectElem = (element) => {
   const rect = element.getBoundingClientRect();
 
@@ -53,25 +55,55 @@ const rollAnim = () => {
   }
 };
 
+
 const iframe = document.querySelector(".video-intro")
 const introDesc = document.querySelector(".intro-desc")
 const introHeading = introDesc.querySelector('.intro-desc-heading')
+const introText = introDesc.querySelector('.intro-text')
+const videoBtns = document.querySelectorAll('.video-button')
+let clickedBtn
+let flag = 0
 
-// iframe.addEventListener('click', ()=>{
-//   introDesc.classList.add('swap')
-//   setTimeout(() => {
-//     if(introDesc.classList.contains('swap')){
-//       introHeading.textContent = 'gabs'
-//     }else{
-//       introHeading.textContent = 'inne'
-//     }
-//     introDesc.classList.remove('swap') 
-//   }, 1000);
-// })
+// iframe.onload = () => {
+//   console.log('siema')
+// }
 
-// iframe.addEventListener("load", function() {
-//   iframe.play();console.log(iframe);
-// });\
-iframe.onload = () => {
-  console.log('siema')
+
+const playVideo = (e) => {
+  if(flag >= 1){
+    clickedBtn.classList.add('played')
+  }
+  videoBtns.forEach(item => {
+    item.classList.remove('active')
+  })
+  clickedBtn = e.target.closest('.video-button')
+  flag++
+  clickedBtn.classList.add('active')
+  introDesc.classList.add('swap')
+  setTimeout(() => {
+    introHeading.textContent = clickedBtn.dataset.title
+    introText.textContent = clickedBtn.dataset.desc
+    introDesc.classList.remove('swap') 
+  }, 500);
 }
+videoBtns.forEach(item =>{
+  item.addEventListener('click', playVideo)
+})
+
+const bluebtns = document.querySelectorAll('.blue-button')
+bluebtns.forEach(item =>{
+  item.addEventListener('click', (e)=>{
+    e.preventDefault
+  })
+})
+
+const monthBtn = document.querySelectorAll('.month-btn')
+
+monthBtn.forEach(item =>{
+  item.addEventListener('click', (e)=>{
+    monthBtn.forEach(item =>{
+      item.classList.remove('chosen')
+      e.target.closest('.month-btn').classList.add('chosen')
+    })
+  })
+})

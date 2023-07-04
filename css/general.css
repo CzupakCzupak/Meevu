@@ -32,6 +32,13 @@ body {
     margin: 0 auto;
 }
 
+.container-sm{
+    max-width: 1074px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .pos-rel{
     position: relative;
 }
@@ -165,6 +172,10 @@ img{
     margin-bottom: 48px;
 }
 
+.mb-45{
+    margin-bottom: 45px;
+}
+
 .mb-41{
     margin-bottom: 41px;
 }
@@ -189,6 +200,10 @@ img{
     margin-bottom: 30px;
 }
 
+.mb-28{
+    margin-bottom: 28px;
+}
+
 .mb-27{
     margin-bottom: 27px;
 }
@@ -209,8 +224,16 @@ img{
     margin-bottom: 19px;
 }
 
+.mb-18{
+    margin-bottom: 18px;
+}
+
 .mb-16{
     margin-bottom: 16px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
 }
 
 .mb-14{
@@ -229,7 +252,15 @@ img{
     margin-bottom: 8px;
 }
 
+.mb-4{
+    margin-bottom: 4px;
+}
+
 /* ------GAP------ */
+
+.gap-5{
+    gap: 5px;
+}
 
 .gap-8{
     gap: 8px;
@@ -249,6 +280,10 @@ img{
 
 .gap-16{
     gap: 16px;
+}
+
+.gap-20{
+    gap: 20px;
 }
 
 .gap-24{
