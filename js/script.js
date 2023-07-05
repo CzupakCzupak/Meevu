@@ -1,5 +1,3 @@
-
-
 const detectElem = (element) => {
   const rect = element.getBoundingClientRect();
 
@@ -64,11 +62,6 @@ const videoBtns = document.querySelectorAll('.video-button')
 let clickedBtn
 let flag = 0
 
-// iframe.onload = () => {
-//   console.log('siema')
-// }
-
-
 const playVideo = (e) => {
   if(flag >= 1){
     clickedBtn.classList.add('played')
@@ -105,5 +98,67 @@ monthBtn.forEach(item =>{
       item.classList.remove('chosen')
       e.target.closest('.month-btn').classList.add('chosen')
     })
+  })
+})
+
+const offerBtns = document.querySelectorAll('.blue-btn-js')
+
+let finalPrice 
+let bundlesPrice = 0
+const bundleName = document.querySelector('.bundle-name')
+const canalsNumber = document.querySelector('.canals-number-js')
+const summPrice = document.querySelector('.final-price')
+const addBundlesPrice = document.querySelector('.additional-bundles')
+const bundleList = document.querySelector('.bundle-list')
+const blueBtnsText = document.querySelectorAll('.blue-btn-text')
+let hiddenOfferPrice = parseFloat(document.querySelector('.hidden-offer-price').value).toFixed(2)
+
+offerBtns.forEach(item => {
+  item.addEventListener('click', (e)=>{
+    const currentBtn = e.target.closest('.blue-btn-js')
+    const currBtnText = currentBtn.querySelector('.blue-btn-text')
+    const offerPrice = parseFloat(currentBtn.dataset.price)
+    hiddenOfferPrice = offerPrice
+    bundlesPrice = parseFloat(addBundlesPrice.textContent)
+    finalPrice = offerPrice + bundlesPrice
+    summPrice.textContent = finalPrice.toFixed(2)
+    blueBtnsText.forEach(item => {
+      item.textContent = 'Wybieram'
+    })
+    currBtnText.textContent = 'Wybrano'
+    bundleName.textContent = currentBtn.dataset.name
+    canalsNumber.textContent = `${currentBtn.dataset.canals} kanałów`
+    
+  })
+})
+
+const bundleBtns = document.querySelectorAll('.bundle-btn-js')
+
+bundleBtns.forEach(item => {
+  item.addEventListener('click', (e)=>{
+    const currBundleBtn = e.target.closest('.bundle-btn-js')
+    const bundleName = currBundleBtn.dataset.name
+
+    if(currBundleBtn.dataset.status == "off"){
+      currBundleBtn.dataset.status = "on"
+      currBundleBtn.querySelector('p').textContent = 'Dodano'
+      bundlesPrice += parseFloat(currBundleBtn.dataset.price)
+      addBundlesPrice.textContent = bundlesPrice.toFixed(2)
+      finalPrice = Number(hiddenOfferPrice) + Number(bundlesPrice)
+      summPrice.textContent = finalPrice.toFixed(2)
+      const listItem = document.createElement('li')
+      listItem.textContent = bundleName
+      listItem.dataset.name = bundleName
+      bundleList.appendChild(listItem)
+    }else{
+      currBundleBtn.dataset.status = "off"
+      currBundleBtn.querySelector('p').textContent = 'Dodaj'
+      bundlesPrice -= parseFloat(currBundleBtn.dataset.price)
+      addBundlesPrice.textContent = bundlesPrice.toFixed(2)
+      finalPrice = Number(hiddenOfferPrice) + Number(bundlesPrice)
+      summPrice.textContent = finalPrice.toFixed(2)
+      const removedItem = bundleList.querySelector(`[data-name="${bundleName}"]`)
+      bundleList.removeChild(removedItem)
+    }
   })
 })

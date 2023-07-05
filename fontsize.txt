@@ -4,3 +4,6 @@ heading tertiary fs40
 heading quaternary fs32
 subtitle fs16
 desc fs24
+
+blue button js = oferta
+bundle btn js = dodatki

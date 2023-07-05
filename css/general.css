@@ -58,7 +58,7 @@ button{
     font-size:inherit;
 }
 
-label,input{
+label,input,button{
     cursor: pointer;
 }
 
