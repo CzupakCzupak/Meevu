@@ -56,6 +56,14 @@
           <div class="features-box">
             <div class="column-box ta-c">
               <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/rectangle151.png"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="img/rectangle151-2.png"
+                />
                 <img
                   src="img/rectangle151.png"
                   alt="4K image"
@@ -83,7 +91,11 @@
                   <h4 class="heading-quaternary white-font">
                     Cofaj, przewijaj i zatrzymuj
                   </h4>
-                  <img src="img/controls.svg" alt="" />
+                  <img
+                    src="img/controls.svg"
+                    alt="Controls for video"
+                    class="responsive-img"
+                  />
                 </div>
               </div>
               <div class="row-box">
@@ -96,7 +108,11 @@
                 </picture>
                 <div class="row-box--desc">
                   <h4 class="heading-quaternary white-font">Nagrywaj</h4>
-                  <img src="img/rec.svg" alt="" class="row-box--img" />
+                  <img
+                    src="img/rec.svg"
+                    alt="Record icon"
+                    class="row-box--img"
+                  />
                 </div>
               </div>
               <div class="row-box">
@@ -141,7 +157,7 @@
       <section class="product-desc--section">
         <div class="container">
           <div class="d-f fd-c ai-c">
-            <div class="product-row">
+            <div class="product-row row-resp">
               <div class="product-row--desc">
                 <p class="product-desc fw-600 mb-16">Masz centrum dowodzenia</p>
                 <h2 class="heading-secondary mb-16 white-font">
@@ -189,7 +205,14 @@
                 </p>
               </div>
               <div class="product-row--img rr">
-                <img src="img/remote.png" alt="Remote image" />
+                <picture>
+                  <source media="(min-width:1024px)" srcset="img/remote.png" />
+                  <source
+                    media="(min-width:360px)"
+                    srcset="img/remote-medium.png"
+                  />
+                  <img src="img/remote.png" alt="Remote image" />
+                </picture>
               </div>
             </div>
           </div>
@@ -245,11 +268,36 @@
               <a href="#" class="download-link">Sprawdź instrukcje</a>
             </div>
           </div>
-          <div class="layout-image">
-            <img src="img/king-img.png" alt="Serial Król" class="image-right" />
+          <div class="layout-image right">
+            <picture>
+              <source media="(min-width: 1025px)" srcset="img/king-img.png" />
+              <source
+                media="(min-width: 361px)"
+                srcset="img/stargirl-medium.png"
+              />
+              <img
+                src="img/king-img.png"
+                alt="Serial Król"
+                class="image-right"
+              />
+            </picture>
           </div>
           <div class="layout-image">
-            <img src="img/stargirl-img.png" alt="Stargirl" class="image-left" />
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="img/stargirl-img.png"
+              />
+              <source
+                media="(min-width: 361px)"
+                srcset="img/gentleman-medium.png"
+              />
+              <img
+                src="img/stargirl-img.png"
+                alt="Stargirl"
+                class="image-right"
+              />
+            </picture>
           </div>
           <div class="layout-text">
             <div class="product-row--desc right">
@@ -314,87 +362,93 @@
       </section>
       <section class="section-app">
         <div class="flex-layout">
-          <div class="layout-image mb-106">
-            <img
-              src="img/iphonemockup.png"
-              alt="Iphone mockup"
-              class="image-left"
-            />
-          </div>
-          <div class="layout-text">
-            <div class="scootersoul product-row--desc right">
-              <p class="product-desc fw-600 mb-16 white-dark">Masz apkę</p>
-              <h2 class="heading-secondary mb-16 gray-light">
-                Hulaj dusza, ograniczeń nie ma!
-              </h2>
-              <p class="product-desc fw-400 mb-32 white-dark">
-                Nie rozstawaj się ze swoją ulubioną rozrywką i oglądaj także
-                poza domem. To dzięki aplikacji MeeVu GO dostępnej z poziomu
-                urządzenia&nbsp;mobilnego lub przeglądarki internetowej.<br />
-                Zabierz MeeVu i... GO!
-              </p>
-              <div class="d-f gap-12">
-                <a href="https://www.apple.com/pl/app-store/" target="_blank">
-                  <img src="img/appstore.png" alt="App Store button" />
-                </a>
-                <a href="https://play.google.com/store" target="_blank">
-                  <img src="img/googleplay.svg" alt="Google play" />
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.uniqcast.uniqtv.meevu"
-                  target="_blank"
-                >
-                  <img src="img/playermeevu.svg" alt="Meevu Player" />
-                </a>
+          <div class="helpy">
+            <div class="layout-image mb-106">
+              <img
+                src="img/iphonemockup.png"
+                alt="Iphone mockup"
+                class="image-left"
+              />
+            </div>
+            <div class="layout-text">
+              <div class="scootersoul product-row--desc right">
+                <p class="product-desc fw-600 mb-16 white-dark">Masz apkę</p>
+                <h2 class="heading-secondary mb-16 gray-light">
+                  Hulaj dusza, ograniczeń nie ma!
+                </h2>
+                <p class="product-desc fw-400 mb-32 white-dark">
+                  Nie rozstawaj się ze swoją ulubioną rozrywką i oglądaj także
+                  poza domem. To dzięki aplikacji MeeVu GO dostępnej z poziomu
+                  urządzenia&nbsp;mobilnego lub przeglądarki internetowej.<br />
+                  Zabierz MeeVu i... GO!
+                </p>
+                <div class="d-f gap-12">
+                  <a href="https://www.apple.com/pl/app-store/" target="_blank">
+                    <img src="img/appstore.png" alt="App Store button" />
+                  </a>
+                  <a href="https://play.google.com/store" target="_blank">
+                    <img src="img/googleplay.svg" alt="Google play" />
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.uniqcast.uniqtv.meevu"
+                    target="_blank"
+                  >
+                    <img src="img/playermeevu.svg" alt="Meevu Player" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="layout-text mb-255">
-            <div class="product-row--desc left">
-              <p class="product-desc fw-600 mb-16 white-dark">Masz władze</p>
-              <h2 class="heading-secondary mb-16 gray-light">
-                Czasem sterujesz...
-              </h2>
-              <p class="product-desc fw-400 mb-32 white-dark">
-                Twój ulubiony program już leci, a Ty jeszcze w pracy? Głowa do
-                góry. Przewiniesz sobie. Scena tak świetna, że musisz obejrzeć
-                ją jeszcze raz? Cofniij do wybranego momentu i przeżywaj
-                wielokrotnie. Steruj czasem. MeeVu poczeka na Ciebie.
-              </p>
-              <a href="#" class="hero-container--link"
-                >Zamów ultrawizję w 4K
-                <img src="img/arrowdown.svg" alt="Arrow down image"
-              /></a>
+          <div class="helpy">
+            <div class="layout-text mb-255">
+              <div class="product-row--desc left">
+                <p class="product-desc fw-600 mb-16 white-dark">Masz władze</p>
+                <h2 class="heading-secondary mb-16 gray-light">
+                  Czasem sterujesz...
+                </h2>
+                <p class="product-desc fw-400 mb-32 white-dark">
+                  Twój ulubiony program już leci, a Ty jeszcze w pracy? Głowa do
+                  góry. Przewiniesz sobie. Scena tak świetna, że musisz obejrzeć
+                  ją jeszcze raz? Cofniij do wybranego momentu i przeżywaj
+                  wielokrotnie. Steruj czasem. MeeVu poczeka na Ciebie.
+                </p>
+                <a href="#" class="hero-container--link"
+                  >Zamów ultrawizję w 4K
+                  <img src="img/arrowdown.svg" alt="Arrow down image"
+                /></a>
+              </div>
+            </div>
+            <div class="layout-image">
+              <img
+                src="img/rewind.gif"
+                alt="Iphone mockup"
+                class="image-right-gif"
+              />
             </div>
           </div>
-          <div class="layout-image">
-            <img
-              src="img/rewind.gif"
-              alt="Iphone mockup"
-              class="image-right-gif"
-            />
-          </div>
-          <div class="layout-image">
-            <img
-              src="img/recvideo.gif"
-              alt="Iphone mockup"
-              class="image-left-gif"
-            />
-          </div>
-          <div class="layout-text mb-253">
-            <div class="product-row--desc right">
-              <p class="product-desc fw-600 mb-16 white-dark">
-                Masz możliwości
-              </p>
-              <h2 class="heading-secondary mb-16 gray-light">
-                ... czasem nagrywasz.
-              </h2>
-              <p class="product-desc fw-400 mb-32 white-dark">
-                Weekendowe koncerty oglądasz w poniedziałek. Bo możesz!
-                Dzięki&nbsp;funkcji nagrywania nic Cię nie ominie. Zaplanuj
-                sobie i oglądaj kiedy chcesz. Bądź na czasie i się nie zgrywaj.
-                Nagrywaj!
-              </p>
+          <div class="helpy">
+            <div class="layout-image">
+              <img
+                src="img/recvideo.gif"
+                alt="Iphone mockup"
+                class="image-left-gif"
+              />
+            </div>
+            <div class="layout-text mb-253">
+              <div class="product-row--desc right">
+                <p class="product-desc fw-600 mb-16 white-dark">
+                  Masz możliwości
+                </p>
+                <h2 class="heading-secondary mb-16 gray-light">
+                  ... czasem nagrywasz.
+                </h2>
+                <p class="product-desc fw-400 mb-32 white-dark">
+                  Weekendowe koncerty oglądasz w poniedziałek. Bo możesz!
+                  Dzięki&nbsp;funkcji nagrywania nic Cię nie ominie. Zaplanuj
+                  sobie i oglądaj kiedy chcesz. Bądź na czasie i się nie
+                  zgrywaj. Nagrywaj!
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -783,21 +837,47 @@
         </div>
         <div class="moving-panels">
           <div class="roll-anim roll-left d-f gap-20 moving-left mb-18">
-            <img src="img/youngboy.png" alt="Young boy photo" />
-            <img src="img/blackwoman.png" alt="Black woman" />
-            <img src="img/legobatman.png" alt="Lego Batman" />
-            <img src="img/woman.png" alt="Woman" />
-            <img src="img/gentleman.png" alt="Old gentleman" />
+            <div class="moving-panel">
+              <img src="img/youngboy.png" alt="Young boy photo" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/blackwoman.png" alt="Black woman" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/legobatman.png" alt="Lego Batman" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/woman.png" alt="Woman" class="wom" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/gentleman.png" alt="Old gentleman" />
+            </div>
           </div>
           <div class="roll-anim roll-right d-f gap-20 moving-right">
-            <img src="img/trainee.png" alt="Woman in bath" />
-            <img src="img/redwoman.png" alt="Woman in red dress" />
-            <img src="img/dc.png" alt="Wonder woman in armor" />
-            <img src="img/cartoon2.png" alt="Craig and friends" />
-            <img src="img/whiteman.png" alt="White man" />
-            <img src="img/cartoon1.png" alt="A man and a dog" />
-            <img src="img/blackman.png" alt="Black man" />
-            <img src="img/batman.png" alt="Batman" />
+            <div class="moving-panel">
+              <img src="img/trainee.png" alt="Woman in bath" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/redwoman.png" alt="Woman in red dress" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/dc.png" alt="Wonder woman in armor" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/cartoon2.png" alt="Craig and friends" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/whiteman.png" alt="White man" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/cartoon1.png" alt="A man and a dog" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/blackman.png" alt="Black man" />
+            </div>
+            <div class="moving-panel">
+              <img src="img/batman.png" alt="Batman" />
+            </div>
           </div>
         </div>
         <div class="sw4k">
@@ -1382,7 +1462,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   24.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="24.90" data-name="HBO Solo">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="24.90"
+                  data-name="HBO Solo"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 12 miesięcy</p>
@@ -1406,7 +1492,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   28.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="28.90" data-name="HBO Film Go">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="28.90"
+                  data-name="HBO Film Go"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 12 miesięcy</p>
@@ -1430,7 +1522,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   54.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="54.90" data-name="Canal+ Prestige">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="54.90"
+                  data-name="Canal+ Prestige"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 12 miesięcy</p>
@@ -1454,7 +1552,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   9.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="9.90" data-name="Paczka Extra">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="9.90"
+                  data-name="Paczka Extra"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 12 miesięcy</p>
@@ -1478,7 +1582,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   19.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="19.90" data-name="Paczka Sportowe Emocje">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="19.90"
+                  data-name="Paczka Sportowe Emocje"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">
@@ -1504,7 +1614,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   5.00 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="5.00" data-name="Telewizja Republika">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="5.00"
+                  data-name="Telewizja Republika"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">
@@ -1528,7 +1644,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   9.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="9.90" data-name="Cinemax">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="9.90"
+                  data-name="Cinemax"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 12 miesięcy</p>
@@ -1552,7 +1674,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   9.90 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="9.90" data-name="Paczka dziecięca">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="9.90"
+                  data-name="Paczka dziecięca"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 12 miesięcy</p>
@@ -1576,7 +1704,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   20.00 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="20.00" data-name="WiFi HomeSpot">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="20.00"
+                  data-name="WiFi HomeSpot"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 24 miesięce</p>
@@ -1598,7 +1732,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   5.00 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="5.00" data-name="G DATA">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="5.00"
+                  data-name="G DATA"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 24 miesięce</p>
@@ -1620,7 +1760,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   1.00 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="1.00" data-name="WiFi">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="1.00"
+                  data-name="WiFi"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">
@@ -1644,7 +1790,13 @@
                 <p class="product-desc-md mb-10 blue-500 ta-c">
                   15.00 <span>zł/mies</span>
                 </p>
-                <button class="blue-button bundle-btn-js mb-15" data-status="off" type="button" data-price="15.00" data-name="Multiroom">
+                <button
+                  class="blue-button bundle-btn-js mb-15"
+                  data-status="off"
+                  type="button"
+                  data-price="15.00"
+                  data-name="Multiroom"
+                >
                   <p>Dodaj</p>
                 </button>
                 <p class="form-writing gray-700 ta-c">Umowa na 24 miesiące</p>
@@ -1664,7 +1816,12 @@
                     <p class="canals-number gray-700 canals-number-js">
                       116 kanałów
                     </p>
-                    <input type="hidden" name="offerprice" value="109.90" class="hidden-offer-price">
+                    <input
+                      type="hidden"
+                      name="offerprice"
+                      value="109.90"
+                      class="hidden-offer-price"
+                    />
                   </div>
                 </div>
                 <div class="summary-col">
@@ -1673,8 +1830,7 @@
                     <p class="canals-number gray-700">
                       <span class="additional-bundles">0.00</span> zł
                     </p>
-                    <ul class="bundle-list">
-                    </ul>
+                    <ul class="bundle-list"></ul>
                   </div>
                 </div>
               </div>
@@ -1692,6 +1848,452 @@
           </div>
         </form>
       </section>
+      <section class="section-accordion">
+        <div class="accordion-container">
+          <h3 class="heading-tertiary mb-59">Poznaj MeeVu lepiej</h3>
+          <p class="product-desc gray-700 mb-35">
+            Rozwiewamy wątpliwości i odpowiadamy na często pojawiające się
+            pytania dotyczące MeeVu - nowoczesnej telewizji w technologii IPTV.
+          </p>
+          <div class="accordion-list">
+            <div class="accordion-box" id="1">
+              <div class="accordion-heading">
+                <p class="product-desc-md gray-700 fw-700">
+                  Czym jest telewizja w technologii IPTV?
+                </p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="accordion-mark"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="24x24 / ic24-chevron-down">
+                    <path
+                      id="Icon"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.0002 8.00025C21.0002 8.25625 20.9023 8.51225 20.7073 8.70725L12.7072 16.7072C12.3162 17.0982 11.6843 17.0982 11.2933 16.7072L3.29325 8.70725C2.90225 8.31625 2.90225 7.68425 3.29325 7.29325C3.68425 6.90225 4.31625 6.90225 4.70725 7.29325L12.0002 14.5862L19.2932 7.29325C19.6842 6.90225 20.3163 6.90225 20.7073 7.29325C20.9023 7.48825 21.0002 7.74425 21.0002 8.00025"
+                      fill="#4560B9"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="panel product-desc gray-700">
+                IPTV (Internet Protocol Television) to telewizja cyfrowa, w
+                której przesył sygnału odbywa się za pomocą szerokopasmowych
+                łączy internetowych. Nie jest to kolejny serwis streamingowy,
+                ponieważ usługa świadczona jest w zamkniętej sieci
+                telekomunikacyjnej, do odbioru której potrzebny jest specjalny
+                dekoder.
+              </div>
+            </div>
+            <div class="accordion-box" id="2">
+              <div class="accordion-heading">
+                <p class="product-desc-md gray-700 fw-700">
+                  Czy jakość łącza internetowego ma wpływ na IPTV?
+                </p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="accordion-mark"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="24x24 / ic24-chevron-down">
+                    <path
+                      id="Icon"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.0002 8.00025C21.0002 8.25625 20.9023 8.51225 20.7073 8.70725L12.7072 16.7072C12.3162 17.0982 11.6843 17.0982 11.2933 16.7072L3.29325 8.70725C2.90225 8.31625 2.90225 7.68425 3.29325 7.29325C3.68425 6.90225 4.31625 6.90225 4.70725 7.29325L12.0002 14.5862L19.2932 7.29325C19.6842 6.90225 20.3163 6.90225 20.7073 7.29325C20.9023 7.48825 21.0002 7.74425 21.0002 8.00025"
+                      fill="#4560B9"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="panel product-desc gray-700">
+                Dzięki technologii adaptive streaming jakość emitowanego sygnału
+                dostosowywana jest do możliwości łącza internetowego, na którym
+                świadczona jest usługa. Nie ma to wpływu na pogorszenie jakości
+                odbioru i korzystania z Internetu równocześnie na kilku
+                urządzeniach.
+              </div>
+            </div>
+            <div class="accordion-box" id="3">
+              <div class="accordion-heading">
+                <p class="product-desc-md gray-700 fw-700">
+                  Dlaczego warto wybrać MeeVu?
+                </p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="accordion-mark"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="24x24 / ic24-chevron-down">
+                    <path
+                      id="Icon"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.0002 8.00025C21.0002 8.25625 20.9023 8.51225 20.7073 8.70725L12.7072 16.7072C12.3162 17.0982 11.6843 17.0982 11.2933 16.7072L3.29325 8.70725C2.90225 8.31625 2.90225 7.68425 3.29325 7.29325C3.68425 6.90225 4.31625 6.90225 4.70725 7.29325L12.0002 14.5862L19.2932 7.29325C19.6842 6.90225 20.3163 6.90225 20.7073 7.29325C20.9023 7.48825 21.0002 7.74425 21.0002 8.00025"
+                      fill="#4560B9"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="panel product-desc gray-700">
+                Główną zaletą MeeVu jest zapewnienie niemal wszystkich
+                funkcjonalności oferowanych na rynku dla tej technologii.
+                Wszystkie cechy usługi oraz urządzeń są stworzone i
+                zaprojektowane z myślą o potrzebach klienta. MeeVu nie wymaga
+                instalacji anten i okablowania. Dzięki nowemu, kompaktowemu
+                dekoderowi 4K MeeVu BOX, możliwe jest oglądanie wszystkich
+                kanałów na ekranie telewizora, komputera czy urządzeń mobilnych.
+                Od teraz telewizja jest na Twoich zasadach – oglądasz, cofasz,
+                przewijasz, nagrywasz – używasz jak chcesz i kiedy chcesz.
+              </div>
+            </div>
+            <div class="accordion-box" id="4">
+              <div class="accordion-heading">
+                <p class="product-desc-md gray-700 fw-700">
+                  Czym jest funkcja TimeShift?
+                </p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="accordion-mark"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="24x24 / ic24-chevron-down">
+                    <path
+                      id="Icon"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.0002 8.00025C21.0002 8.25625 20.9023 8.51225 20.7073 8.70725L12.7072 16.7072C12.3162 17.0982 11.6843 17.0982 11.2933 16.7072L3.29325 8.70725C2.90225 8.31625 2.90225 7.68425 3.29325 7.29325C3.68425 6.90225 4.31625 6.90225 4.70725 7.29325L12.0002 14.5862L19.2932 7.29325C19.6842 6.90225 20.3163 6.90225 20.7073 7.29325C20.9023 7.48825 21.0002 7.74425 21.0002 8.00025"
+                      fill="#4560B9"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="panel product-desc gray-700">
+                MeeVu daje Ci moc sterowania czasem! Możesz cofać, przewijać i
+                zatrzymywać swoje ulubione audycje.
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="questions">
+                <p class="product-desc-md fw-700 gray-700">
+                  Masz więcej pytań?
+                </p>
+                <p class="product-desc gray-700">Mamy więcej odpowiedzi.</p>
+              </div>
+              <div class="btn-outline-blue">
+                <p class="product-desc fw-600 blue">
+                  Najczęściej zadawane pytania
+                </p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Icon">
+                    <path
+                      id="Icon_2"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.2097 4.3871L13.2929 4.29289C13.6534 3.93241 14.2206 3.90468 14.6129 4.2097L14.7071 4.29289L21.7071 11.2929L21.7485 11.3369V11.3369L21.8037 11.4047V11.4047L21.8753 11.5159V11.5159L21.9288 11.6287V11.6287L21.9642 11.734V11.734L21.9931 11.8819V11.8819L22 12V12L21.9972 12.0752V12.0752L21.9798 12.2007V12.2007L21.9503 12.3121V12.3121L21.9063 12.4232V12.4232L21.854 12.5207V12.5207L21.7803 12.6254V12.6254L21.7071 12.7071L14.7071 19.7071C14.3166 20.0976 13.6834 20.0976 13.2929 19.7071C12.9324 19.3466 12.9047 18.7794 13.2097 18.3871L13.2929 18.2929L18.584 13H3C2.44772 13 2 12.5523 2 12C2 11.4477 2.44772 11 3 11H18.586L13.2929 5.70711C12.9324 5.34662 12.9047 4.77939 13.2097 4.3871L13.2929 4.29289L13.2097 4.3871Z"
+                      fill="#406FDB"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-add">
+        <div class="add-image-container">
+          <div>
+            <h3 class="heading-tertiary gray-600 mb-24">
+              Internet domowy z telewizją
+            </h3>
+            <p class="product-desc gray-400 mb-27">
+              Interesują Cię pakiety „telewizja plus internet”? To doskonale się
+              składa, ponieważ w ASTA-NET mamy naprawdę ciekawe oferty dwupaków
+              w niezwykle atrakcyjnych cenach! Wybierz jeden z nich i ciesz się
+              ponad 150 kanałami TV, w tym wieloma w jakości HD, oraz
+              superszybkim łączem szerokopasmowym w zaciszu swojego domu!
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="img/couple-laying.png"
+              alt="Para leżąca na łóżku"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+        <div class="text-image-container">
+          <div>
+            <p class="product-desc fw-600 gray-700 mb-16">
+              Pakiet internet + telewizja dopasowany do Twoich potrzeb
+            </p>
+            <p class="product-desc fw-400 gray-400 mb-16">
+              Jesteśmy bardzo elastyczni i chętnie dostosowujemy naszą ofertę do
+              rosnących oczekiwań i potrzeb naszych klientów. Staramy się
+              wprowadzać coraz to nowsze, jeszcze bardziej atrakcyjne opcje.
+            </p>
+            <p class="product-desc fw-400 gray-400">
+              Dla wielbicieli dobrych okazji z ogromną ilością korzyści
+              proponujemy nasz internet domowy z telewizją. Przeróżne pakiety
+              dostępne są w konkurencyjnych cenach. Szybki światłowód do 600
+              mb/s oraz TV cyfrowa w jednym oznacza mniej zmartwień! Jeden
+              pakiet domowy obejmuje błyskawiczne łącze, ogromną ilość różnego
+              rodzaju kanałów, dodatkowo istnieje opcja rozszerzenia podstawowej
+              oferty o tematyczne paczki filmowe, usługę multiroom, G DATA oraz
+              Wi-Fi.
+            </p>
+          </div>
+          <div>
+            <p class="product-desc fw-600 gray-700 mb-16">
+              Oferta telewizja i internet w jednym = korzyści dla portfela
+            </p>
+            <p class="product-desc fw-400 gray-400 mb-16">
+              Dlaczego warto zdecydować się na dwupak internet domowy i
+              telewizję? Ponieważ wybierając taką opcję, można sporo
+              zaoszczędzić na comiesięcznym abonamencie!
+            </p>
+            <p class="product-desc fw-400 gray-400">
+              Dodatkowo zyskujemy jeszcze jedno: mniejszą ilość formalności do
+              załatwienia, a przyszłościowo również rachunków do zapłacenia. To
+              właśnie zyskuje się, korzystając z usług jednego operatora! Nie
+              czekaj więc i wybierz pakiet domowy, który Cię najbardziej
+              interesuje! Proponowane przez nas usługi charakteryzuje atrakcyjna
+              cena – zapraszamy wszystkich zainteresowanych z Wielkopolski do
+              kontaktu.
+            </p>
+            <p class="product-desc fw-400 gray-400">
+              Chętnie odpowiemy na wszelkie nurtujące Cię pytania, a w razie
+              wątpliwości doradzimy możliwie najlepsze rozwiązanie i
+              zaproponujemy najkorzystniejszą dla Ciebie ofertę!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-leave-number">
+        <div class="leave-number">
+          <div class="leave-number-form">
+            <h4 class="heading-quaternary mb-16 blue-500">
+              Masz pytania? <br />Zostaw&nbsp;swój&nbsp;numer.
+            </h4>
+            <p class="tech-help gray-600">
+              Konsultanci pracują pn-pt 8:00 - 20:00, sob 9:00 - 16:00
+            </p>
+            <p class="tech-help gray-600 mb-32">
+              Pomoc techniczna czynna całą dobę.
+            </p>
+            <form action="#" class="form-container">
+              <div class="form-number">
+                <input
+                  type="tel"
+                  name=""
+                  id=""
+                  placeholder="Numer telefonu"
+                  class="number-input"
+                />
+                <input type="submit" value="Wyślij" class="number-submit" />
+              </div>
+              <div class="checkbox-box">
+                <input
+                  type="checkbox"
+                  name="checkboxy"
+                  id=""
+                  class="checkbox-number"
+                />
+                <label for="checkboxy" class="product-desc gray-700"
+                  >Wyrażam zgodę na przetwarzanie mocih danych osobowych</label
+                >
+              </div>
+            </form>
+          </div>
+          <img
+            src="img/couple-watching.png"
+            alt="Couple watching movie on a sofa"
+            class="responsive-img"
+          />
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-layout">
+        <div class="footer-col">
+          <p class="footer-col-heading">OFERTA</p>
+          <p class="product-desc fw-400 gray-700">Pakiety</p>
+          <p class="product-desc fw-400 gray-700">Telewizja</p>
+          <p class="product-desc fw-400 gray-700">Internet/Światłowód</p>
+          <p class="product-desc fw-400 gray-700">Telefon</p>
+          <p class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-heading">OFERTA</p>
+          <p class="product-desc fw-400 gray-700">Pakiety</p>
+          <p class="product-desc fw-400 gray-700">Telewizja</p>
+          <p class="product-desc fw-400 gray-700">Internet/Światłowód</p>
+          <p class="product-desc fw-400 gray-700">Telefon</p>
+          <p class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-heading">OFERTA</p>
+          <p class="product-desc fw-400 gray-700">Pakiety</p>
+          <p class="product-desc fw-400 gray-700">Telewizja</p>
+          <p class="product-desc fw-400 gray-700">Internet/Światłowód</p>
+          <p class="product-desc fw-400 gray-700">Telefon</p>
+          <p class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</p>
+        </div>
+      </div>
+
+      <div class="d-f jc-b">
+        <div class="footer-cont">
+          <p class="product-desc-md fw-600 gray-700">
+            © Copyright 2023 ASTA-NET
+          </p>
+          <svg
+            id="Warstwa_1"
+            data-name="Warstwa 1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="300"
+            height="33"
+            viewBox="0 0 300 33"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #222;
+                }
+                .cls-2 {
+                  fill: none;
+                }
+              </style>
+            </defs>
+            <title>logo_sungroup_1</title>
+            <polygon
+              class="cls-1"
+              points="117.61 22.61 117.61 22.61 117.61 22.61 117.61 22.61"
+            />
+            <polygon
+              class="cls-1"
+              points="274.39 17.47 274.39 17.46 274.39 17.47 274.39 17.47"
+            />
+            <path
+              class="cls-2"
+              d="M208.83,13.31a3.78,3.78,0,0,0-3.84,4,3.85,3.85,0,1,0,7.69,0A3.8,3.8,0,0,0,208.83,13.31Z"
+            />
+            <path
+              class="cls-2"
+              d="M180.84,5.57a11,11,0,1,0,11,11A11,11,0,0,0,180.84,5.57Z"
+            />
+            <path
+              class="cls-2"
+              d="M235.56,13.31a4.25,4.25,0,0,0-1.35.23,4,4,0,0,0-2.72,3.93,4,4,0,0,0,2.72,3.93,4.25,4.25,0,0,0,1.35.23A4,4,0,0,0,238.9,20a4.31,4.31,0,0,0,.75-2.48A4.26,4.26,0,0,0,238.9,15,4,4,0,0,0,235.56,13.31Z"
+            />
+            <path
+              class="cls-2"
+              d="M267.55,13.31a3.79,3.79,0,0,0-3.84,3.25,4.6,4.6,0,0,0,0,1.81,3.79,3.79,0,0,0,3.84,3.26,3.89,3.89,0,0,0,3.92-4.16A3.89,3.89,0,0,0,267.55,13.31Z"
+            />
+            <path
+              class="cls-1"
+              d="M125.27,16.33c-.22,0-.44-.09-.68-.12L123.25,16c-1.2-.17-2.15-.43-2.15-1.34s.91-1.54,2.46-1.54a7.48,7.48,0,0,1,1.71.21,8.1,8.1,0,0,1,2.31.9L128.8,12a9.05,9.05,0,0,0-3.53-1.23,12.26,12.26,0,0,0-1.74-.14c-3.31,0-5.37,1.59-5.37,4.16,0,2.09,1.53,3.42,4.41,3.81l1.36.17a5.9,5.9,0,0,1,1.34.34c.62.26.91.63.91,1.1a1.35,1.35,0,0,1-.91,1.23,4.89,4.89,0,0,1-2,.36,6.54,6.54,0,0,1-4.29-1.33l-1.32,2.12h0a9.59,9.59,0,0,0,5.58,1.67,10.13,10.13,0,0,0,2.08-.22c2.45-.54,3.84-2,3.84-4S127.69,16.83,125.27,16.33Z"
+            />
+            <path
+              class="cls-1"
+              d="M140.85,11V18.2c0,2.51-1.4,3.43-3.18,3.43s-3.18-.92-3.18-3.43V11h-2.85v7.48c0,4.13,3,5.84,6,5.84a6.88,6.88,0,0,0,3.3-.8,5.36,5.36,0,0,0,2.73-5V11h-2.85Z"
+            />
+            <path
+              class="cls-1"
+              d="M154.16,10.64a4.61,4.61,0,0,0-4,1.92V11h-2.83V24h2.85v-7.2a3.22,3.22,0,0,1,3.37-3.42c1.9,0,3,1.21,3,3.39V24h2.85V15.8A5,5,0,0,0,154.16,10.64Z"
+            />
+            <path
+              class="cls-1"
+              d="M212.43,11v1.56a5.22,5.22,0,0,0-4.33-1.9c-3,0-6,2.49-6,6.69s3.06,6.69,6,6.69a5.21,5.21,0,0,0,4.33-1.89v1c0,2.41-1.46,3.88-4.13,3.88a8.56,8.56,0,0,1-4.41-1.32l-1,2.4a10,10,0,0,0,5.44,1.5,7.64,7.64,0,0,0,4.39-1.21,6.15,6.15,0,0,0,2.6-5.37V11h-2.86Zm-3.6,10.38a3.79,3.79,0,0,1-3.84-4,3.85,3.85,0,1,1,7.69,0A3.8,3.8,0,0,1,208.83,21.36Z"
+            />
+            <path
+              class="cls-1"
+              d="M222.2,12.09a3.68,3.68,0,0,0-.33.35V11h-2.81V24h2.84V16.82a4.22,4.22,0,0,1,.3-1.62,2.86,2.86,0,0,1,2.8-1.87,5.13,5.13,0,0,1,2.16.48l.67-2.81a5.79,5.79,0,0,0-2.18-.36A4.41,4.41,0,0,0,222.2,12.09Z"
+            />
+            <path
+              class="cls-1"
+              d="M238.9,11.44a7.29,7.29,0,0,0-3.34-.8,8.37,8.37,0,0,0-1.35.12,6.67,6.67,0,0,0-5.64,6.71,6.66,6.66,0,0,0,5.64,6.7,7.23,7.23,0,0,0,4.69-.68,6.61,6.61,0,0,0,3.67-6A6.62,6.62,0,0,0,238.9,11.44Zm0,8.51a4,4,0,0,1-3.34,1.68,4.25,4.25,0,0,1-1.35-.23,4,4,0,0,1-2.72-3.93,4,4,0,0,1,2.72-3.93,4.25,4.25,0,0,1,1.35-.23A4,4,0,0,1,238.9,15a4.26,4.26,0,0,1,.75,2.48A4.31,4.31,0,0,1,238.9,20Z"
+            />
+            <path
+              class="cls-1"
+              d="M254.48,18.2c0,2.51-1.4,3.43-3.18,3.43a3.12,3.12,0,0,1-2.36-.9,3.61,3.61,0,0,1-.81-2.53V11h-2.86v7.48a5.32,5.32,0,0,0,3.67,5.45,7.49,7.49,0,0,0,2.36.39c3,0,6-1.71,6-5.84V11h-2.85Z"
+            />
+            <path
+              class="cls-1"
+              d="M267.89,10.64a5,5,0,0,0-4.08,1.88V11H261v18.4h2.84v-7a5,5,0,0,0,4.08,1.89,6.52,6.52,0,0,0,6.5-6.83h0A6.52,6.52,0,0,0,267.89,10.64Zm-.34,11a3.79,3.79,0,0,1-3.84-3.26,4.6,4.6,0,0,1,0-1.81,3.79,3.79,0,0,1,3.84-3.25,3.89,3.89,0,0,1,3.92,4.16A3.89,3.89,0,0,1,267.55,21.63Z"
+            />
+            <path
+              class="cls-1"
+              d="M180.84.09a16.46,16.46,0,1,0,0,32.91h0a16.46,16.46,0,1,0,0-32.91Zm0,27.42a11,11,0,1,1,11-11A11,11,0,0,1,180.84,27.51Z"
+            />
+            <path
+              d="M36.65,14h1.82l-2.95,7.53H33.89L32,16.59l-1.82,4.94H28.56L25.61,14h1.91l1.94,5.31L31.41,14h1.35l2,5.35Z"
+            />
+            <path
+              d="M46.78,14l-3.5,8a4.68,4.68,0,0,1-1.52,2,5.39,5.39,0,0,1-2.29.85l-.42-1.43a4.72,4.72,0,0,0,1.59-.6,2.62,2.62,0,0,0,.86-1.08l.24-.56L38.61,14h2l2.17,5.41L44.93,14Z"
+            />
+            <path
+              d="M55.23,21.53H52.9l-3.3-3.48v3.48H47.75v-11H49.6v6.77L52.71,14H55l-3.39,3.6Z"
+            />
+            <path
+              d="M57.27,21.17a3.28,3.28,0,0,1-1.35-1.36,4.43,4.43,0,0,1-.47-2.08,4.47,4.47,0,0,1,.47-2.09,3.34,3.34,0,0,1,1.35-1.36,4.11,4.11,0,0,1,2-.48,4.05,4.05,0,0,1,2,.48,3.23,3.23,0,0,1,1.33,1.36,4.35,4.35,0,0,1,.47,2.09,4.31,4.31,0,0,1-.47,2.08,3.18,3.18,0,0,1-1.33,1.36,4.05,4.05,0,0,1-2,.48A4.11,4.11,0,0,1,57.27,21.17Zm3.46-1.6a2.9,2.9,0,0,0,.5-1.84,2.91,2.91,0,0,0-.51-1.85,1.73,1.73,0,0,0-1.43-.63,1.75,1.75,0,0,0-1.45.63,2.91,2.91,0,0,0-.51,1.85,2.9,2.9,0,0,0,.5,1.84,2,2,0,0,0,2.9,0Z"
+            />
+            <path
+              d="M71.72,16.91v4.62H69.85V17a2,2,0,0,0-.34-1.3,1.31,1.31,0,0,0-1.06-.41,1.82,1.82,0,0,0-1.37.54,2,2,0,0,0-.52,1.44v4.27H64.71v-5.4A16.81,16.81,0,0,0,64.59,14h1.74l.14,1.23a2.81,2.81,0,0,1,1-1.06A3.09,3.09,0,0,1,69,13.8C70.82,13.8,71.72,14.84,71.72,16.91Z"
+            />
+            <path
+              d="M80.91,14v7.53H79.08V20.32a2.4,2.4,0,0,1-1,1,3,3,0,0,1-1.46.35,3.13,3.13,0,0,1-2.93-1.83,4.87,4.87,0,0,1-.41-2.05,4.88,4.88,0,0,1,.42-2.07,3.35,3.35,0,0,1,1.19-1.4,3.1,3.1,0,0,1,1.73-.5,3,3,0,0,1,1.46.35,2.46,2.46,0,0,1,1,1V14Zm-2.34,5.55a2.85,2.85,0,0,0,.51-1.81,2.85,2.85,0,0,0-.51-1.83,1.91,1.91,0,0,0-2.89,0,3,3,0,0,0-.51,1.84,2.77,2.77,0,0,0,.51,1.79,1.79,1.79,0,0,0,1.46.63A1.75,1.75,0,0,0,78.57,19.55Z"
+            />
+            <path
+              d="M90,16.91v4.62H88.09V17a2,2,0,0,0-.34-1.3,1.31,1.31,0,0,0-1.06-.41,1.8,1.8,0,0,0-1.37.54,2,2,0,0,0-.53,1.44v4.27H82.94v-5.4A16.81,16.81,0,0,0,82.82,14h1.75l.13,1.23a2.77,2.77,0,0,1,1.06-1.06,3.09,3.09,0,0,1,1.5-.37C89.06,13.8,90,14.84,90,16.91Z"
+            />
+            <path d="M91.82,10.58H93.9v1.83H91.82Zm.12,11V14h1.85v7.53Z" />
+            <path
+              d="M102.43,17.86H97.24a2.71,2.71,0,0,0,.6,1.78,2.11,2.11,0,0,0,1.62.58,3.71,3.71,0,0,0,2.3-.81l.54,1.29a4.33,4.33,0,0,1-1.32.69,5.19,5.19,0,0,1-1.59.26,4,4,0,0,1-2.91-1,3.85,3.85,0,0,1-1.06-2.87,4.35,4.35,0,0,1,.46-2,3.38,3.38,0,0,1,1.3-1.4,3.66,3.66,0,0,1,1.89-.5,3.14,3.14,0,0,1,2.46,1,4,4,0,0,1,.9,2.77ZM97.9,15.58a2.2,2.2,0,0,0-.6,1.28h3.5a2,2,0,0,0-.51-1.28,1.57,1.57,0,0,0-1.17-.44A1.72,1.72,0,0,0,97.9,15.58Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </footer>
+    <a href="#">
+      <div class="scroll-up">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          class="accordion-mark"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="24x24 / ic24-chevron-down">
+            <path
+              id="Icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.0002 8.00025C21.0002 8.25625 20.9023 8.51225 20.7073 8.70725L12.7072 16.7072C12.3162 17.0982 11.6843 17.0982 11.2933 16.7072L3.29325 8.70725C2.90225 8.31625 2.90225 7.68425 3.29325 7.29325C3.68425 6.90225 4.31625 6.90225 4.70725 7.29325L12.0002 14.5862L19.2932 7.29325C19.6842 6.90225 20.3163 6.90225 20.7073 7.29325C20.9023 7.48825 21.0002 7.74425 21.0002 8.00025"
+              fill="#fff"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </a>
   </body>
 </html>

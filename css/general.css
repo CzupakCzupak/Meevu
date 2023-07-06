@@ -160,6 +160,10 @@ img{
     margin-bottom: 64px;
 }
 
+.mb-59{
+    margin-bottom: 59px;
+}
+
 .mb-52{
     margin-bottom: 52px;
 }
@@ -186,6 +190,10 @@ img{
 
 .mb-38{
     margin-bottom: 38px;
+}
+
+.mb-35{
+    margin-bottom: 35px;
 }
 
 .mb-36{
@@ -406,3 +414,4 @@ img{
     display: block;
     margin: 0 auto;
 }
+
