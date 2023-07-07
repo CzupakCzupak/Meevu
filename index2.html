@@ -35,10 +35,18 @@
 .active .panel{
   max-height: 100vh;
 }
+
+input[type=button],input[type=text],span{
+  width: 400px;
+  height: 100px;
+  font-size: 50px;
+}
 </style>
 </head>
 <body>
-
+  <input type="text">
+  <input type="button" value="Kopiuj i zmień">
+<!-- 
 <h2>Accordion</h2>
 
 <div class="accordion">Section 1</div>
@@ -56,29 +64,80 @@
 <div class="accordion">Section 3</div>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
+</div> -->
+<br>
+<span>Tu jestem</span>
 <script>
-  window.addEventListener("resize", (e) => {
-    const activeAccordion = document.querySelector('.accordion.active')
-    if(activeAccordion){
-      const panelActive = activeAccordion.querySelector('.panel')
-      panelActive.style.maxHeight = panelActive.scrollHeight + 'px'
-    }
-  });
-let acc = document.querySelectorAll(".accordion");
-acc.forEach(item =>{
-  item.addEventListener('click', (e)=> {
-    const currAcc = e.target.closest('.accordion')
-    currAcc.classList.toggle("active");
-    const panel = currAcc.querySelector('.panel');
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px"
-    }
+  const text = document.querySelector('input[type=text]')
+  const button = document.querySelector('input[type=button]')
+
+  const span = document.querySelector("span");
+
+span.onclick = function() {
+  document.execCommand("copy");
+}
+
+span.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
+
+  button.addEventListener('click',()=>{
+    const polishLetters = {
+    'ą': 'a',
+    'ć': 'c',
+    'ę': 'e',
+    'ł': 'l',
+    'ń': 'n',
+    'ó': 'o',
+    'ś': 's',
+    'ź': 'z',
+    'ż': 'z',
+    'Ą': 'A',
+    'Ć': 'C',
+    'Ę': 'E',
+    'Ł': 'L',
+    'Ń': 'N',
+    'Ó': 'O',
+    'Ś': 'S',
+    'Ź': 'Z',
+    'Ż': 'Z'
+
+
+}
+
+// Example usage
+// const text = 'Zażółć gęślą jaźń';
+// return text
+    span.textContent = (text.value.split(' ').join('-')).replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, letter => polishLetters[letter]);
   })
-})
+      
+
+//   window.addEventListener("resize", (e) => {
+//     const activeAccordion = document.querySelector('.accordion.active')
+//     if(activeAccordion){
+//       const panelActive = activeAccordion.querySelector('.panel')
+//       panelActive.style.maxHeight = panelActive.scrollHeight + 'px'
+//     }
+//   });
+// let acc = document.querySelectorAll(".accordion");
+// acc.forEach(item =>{
+//   item.addEventListener('click', (e)=> {
+//     const currAcc = e.target.closest('.accordion')
+//     currAcc.classList.toggle("active");
+//     const panel = currAcc.querySelector('.panel');
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px"
+//     }
+//   })
+// })
+const strinczeg = 'Lustro owalne piaskowane z podświetleniem'
+console.log()
 
 </script>
 

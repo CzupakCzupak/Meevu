@@ -114,10 +114,28 @@ let hiddenOfferPrice = parseFloat(
   document.querySelector(".hidden-offer-price").value
 ).toFixed(2);
 
+~
+
+
+
+
+
+
+
+
+
+const offers = document.querySelectorAll('.offer-item')
+console.log(offers);
+
 offerBtns.forEach((item) => {
   item.addEventListener("click", (e) => {
+    offers.forEach(item =>{
+      item.classList.remove('active')
+    })
     const currentBtn = e.target.closest(".blue-btn-js");
+    const chosenOffer = e.target.closest(".offer-item")
     const currBtnText = currentBtn.querySelector(".blue-btn-text");
+    chosenOffer.classList.add('active')
     const offerPrice = parseFloat(currentBtn.dataset.price);
     hiddenOfferPrice = offerPrice;
     bundlesPrice = parseFloat(addBundlesPrice.textContent);
@@ -127,6 +145,7 @@ offerBtns.forEach((item) => {
       item.textContent = "Wybieram";
     });
     currBtnText.textContent = "Wybrano";
+
     bundleName.textContent = currentBtn.dataset.name;
     canalsNumber.textContent = `${currentBtn.dataset.canals} kanałów`;
   });

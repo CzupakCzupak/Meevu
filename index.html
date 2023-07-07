@@ -9,8 +9,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/core.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/core.css" />
     <!-- Javascript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="js/core.js"></script>     -->
@@ -61,11 +61,11 @@
                   srcset="img/rectangle151.png"
                 />
                 <source
-                  media="(min-width: 360px)"
+                  media="(min-width: 361px)"
                   srcset="img/rectangle151-2.png"
                 />
                 <img
-                  src="img/rectangle151.png"
+                  src="img/rectangle-151-3.png"
                   alt="4K image"
                   class="background-image"
                 />
@@ -81,8 +81,9 @@
             <div class="rows-layout">
               <div class="row-box">
                 <picture>
+                  <source media="(min-width: 360px)" srcset="img/section2-2.jpg">
                   <img
-                    src="img/section2-2.jpg"
+                    src="img/rectangle16-3.png"
                     alt="Surfing"
                     class="background-image"
                   />
@@ -221,7 +222,7 @@
           <div class="product-row--desc ta-c">
             <p class="product-desc fw-600 mb-16">Masz konkret</p>
             <h2 class="heading-secondary mb-16 white-font">
-              Taka jakość! Będą&nbsp;o&nbsp;nią&nbsp;pytać.
+              Taka jakość! <br>Będą o nią pytać.
             </h2>
             <p class="product-desc fw-400 mb-30">
               Oglądaj OSTRO(żnie) - w 4K HDR! OSTRO(żnie), bo zachwyci Cię
@@ -244,6 +245,10 @@
             alt="image"
             class="img-right roll-anim roll-left"
           />
+          <picture class="landscape-tablet">
+            <source media="(min-width: 361px)" srcset="img/fade-landscape.png">
+            <img src="img/fade-landscape-small.png" alt="Landscape">
+          </picture>
         </div>
       </section>
       <section class="canals-section">
@@ -363,11 +368,11 @@
       <section class="section-app">
         <div class="flex-layout">
           <div class="helpy">
-            <div class="layout-image mb-106">
+            <div class="layout-image">
               <img
                 src="img/iphonemockup.png"
                 alt="Iphone mockup"
-                class="image-left"
+                class="image-left image-w100"
               />
             </div>
             <div class="layout-text">
@@ -400,7 +405,7 @@
             </div>
           </div>
           <div class="helpy">
-            <div class="layout-text mb-255">
+            <div class="layout-text">
               <div class="product-row--desc left">
                 <p class="product-desc fw-600 mb-16 white-dark">Masz władze</p>
                 <h2 class="heading-secondary mb-16 gray-light">
@@ -418,7 +423,7 @@
                 /></a>
               </div>
             </div>
-            <div class="layout-image">
+            <div class="layout-image right-gif">
               <img
                 src="img/rewind.gif"
                 alt="Iphone mockup"
@@ -434,7 +439,7 @@
                 class="image-left-gif"
               />
             </div>
-            <div class="layout-text mb-253">
+            <div class="layout-text">
               <div class="product-row--desc right">
                 <p class="product-desc fw-600 mb-16 white-dark">
                   Masz możliwości
@@ -442,7 +447,7 @@
                 <h2 class="heading-secondary mb-16 gray-light">
                   ... czasem nagrywasz.
                 </h2>
-                <p class="product-desc fw-400 mb-32 white-dark">
+                <p class="product-desc fw-400 white-dark">
                   Weekendowe koncerty oglądasz w poniedziałek. Bo możesz!
                   Dzięki&nbsp;funkcji nagrywania nic Cię nie ominie. Zaplanuj
                   sobie i oglądaj kiedy chcesz. Bądź na czasie i się nie
@@ -763,7 +768,7 @@
                     />
                   </g>
                 </svg>
-                <p class="fw-600">Ulubione i profile użytkownika</p>
+                <p class="fw-600">Przypomnienia o audycjach</p>
               </div>
               <p class="fw-400">3:49</p>
             </div>
@@ -1018,7 +1023,7 @@
             </p>
           </div>
           <div class="container-offer">
-            <div class="offer-item">
+            <div class="offer-item active">
               <p class="offer-name">Optymalny + 100 Mb/s</p>
               <p class="offer-price">109,90 <span>zł netto/mies</span></p>
               <div class="d-f jc-c gap-10 mb-20">
@@ -1048,7 +1053,7 @@
                 data-canals="116"
                 type="button"
               >
-                <p class="blue-btn-text">Wybieram</p>
+                <p class="blue-btn-text">Wybrano</p>
               </button>
               <p class="canals-number">116 kanałów, 100 Mb/s</p>
               <a href="#" class="canals-list mb-30">Zobacz listę kanałów</a>
@@ -2062,6 +2067,13 @@
               Wi-Fi.
             </p>
           </div>
+          <div class="image-container-tablet">
+            <img
+              src="img/couple-laying-tablet.png"
+              alt="Para leżąca na łóżku"
+              class="responsive-img"
+            />
+          </div>
           <div>
             <p class="product-desc fw-600 gray-700 mb-16">
               Oferta telewizja i internet w jednym = korzyści dla portfela
@@ -2119,7 +2131,7 @@
                   class="checkbox-number"
                 />
                 <label for="checkboxy" class="product-desc gray-700"
-                  >Wyrażam zgodę na przetwarzanie mocih danych osobowych</label
+                  >Wyrażam zgodę na przetwarzanie moich danych osobowych</label
                 >
               </div>
             </form>
@@ -2136,27 +2148,27 @@
       <div class="footer-layout">
         <div class="footer-col">
           <p class="footer-col-heading">OFERTA</p>
-          <p class="product-desc fw-400 gray-700">Pakiety</p>
-          <p class="product-desc fw-400 gray-700">Telewizja</p>
-          <p class="product-desc fw-400 gray-700">Internet/Światłowód</p>
-          <p class="product-desc fw-400 gray-700">Telefon</p>
-          <p class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</p>
+          <a class="product-desc fw-400 gray-700">Pakiety</a>
+          <a class="product-desc fw-400 gray-700">Telewizja</a>
+          <a class="product-desc fw-400 gray-700">Internet/Światłowód</a>
+          <a class="product-desc fw-400 gray-700">Telefon</a>
+          <a class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</a>
         </div>
         <div class="footer-col">
           <p class="footer-col-heading">OFERTA</p>
-          <p class="product-desc fw-400 gray-700">Pakiety</p>
-          <p class="product-desc fw-400 gray-700">Telewizja</p>
-          <p class="product-desc fw-400 gray-700">Internet/Światłowód</p>
-          <p class="product-desc fw-400 gray-700">Telefon</p>
-          <p class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</p>
+          <a class="product-desc fw-400 gray-700">Pakiety</a>
+          <a class="product-desc fw-400 gray-700">Telewizja</a>
+          <a class="product-desc fw-400 gray-700">Internet/Światłowód</a>
+          <a class="product-desc fw-400 gray-700">Telefon</a>
+          <a class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</a>
         </div>
         <div class="footer-col">
           <p class="footer-col-heading">OFERTA</p>
-          <p class="product-desc fw-400 gray-700">Pakiety</p>
-          <p class="product-desc fw-400 gray-700">Telewizja</p>
-          <p class="product-desc fw-400 gray-700">Internet/Światłowód</p>
-          <p class="product-desc fw-400 gray-700">Telefon</p>
-          <p class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</p>
+          <a class="product-desc fw-400 gray-700">Pakiety</a>
+          <a class="product-desc fw-400 gray-700">Telewizja</a>
+          <a class="product-desc fw-400 gray-700">Internet/Światłowód</a>
+          <a class="product-desc fw-400 gray-700">Telefon</a>
+          <a class="product-desc fw-400 gray-700">Wi-Fi HomeSpot</a>
         </div>
       </div>
 
@@ -2165,9 +2177,12 @@
           <p class="product-desc-md fw-600 gray-700">
             © Copyright 2023 ASTA-NET
           </p>
-          <svg
+          <a href="#">
+
+            <svg
             id="Warstwa_1"
             data-name="Warstwa 1"
+          
             xmlns="http://www.w3.org/2000/svg"
             width="300"
             height="33"
@@ -2270,6 +2285,7 @@
               d="M102.43,17.86H97.24a2.71,2.71,0,0,0,.6,1.78,2.11,2.11,0,0,0,1.62.58,3.71,3.71,0,0,0,2.3-.81l.54,1.29a4.33,4.33,0,0,1-1.32.69,5.19,5.19,0,0,1-1.59.26,4,4,0,0,1-2.91-1,3.85,3.85,0,0,1-1.06-2.87,4.35,4.35,0,0,1,.46-2,3.38,3.38,0,0,1,1.3-1.4,3.66,3.66,0,0,1,1.89-.5,3.14,3.14,0,0,1,2.46,1,4,4,0,0,1,.9,2.77ZM97.9,15.58a2.2,2.2,0,0,0-.6,1.28h3.5a2,2,0,0,0-.51-1.28,1.57,1.57,0,0,0-1.17-.44A1.72,1.72,0,0,0,97.9,15.58Z"
             />
           </svg>
+        </a>
         </div>
       </div>
     </footer>
