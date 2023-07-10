@@ -113,29 +113,18 @@ const blueBtnsText = document.querySelectorAll(".blue-btn-text");
 let hiddenOfferPrice = parseFloat(
   document.querySelector(".hidden-offer-price").value
 ).toFixed(2);
-
-~
-
-
-
-
-
-
-
-
-
-const offers = document.querySelectorAll('.offer-item')
+const offers = document.querySelectorAll(".offer-item");
 console.log(offers);
 
 offerBtns.forEach((item) => {
   item.addEventListener("click", (e) => {
-    offers.forEach(item =>{
-      item.classList.remove('active')
-    })
+    offers.forEach((item) => {
+      item.classList.remove("active");
+    });
     const currentBtn = e.target.closest(".blue-btn-js");
-    const chosenOffer = e.target.closest(".offer-item")
+    const chosenOffer = e.target.closest(".offer-item");
     const currBtnText = currentBtn.querySelector(".blue-btn-text");
-    chosenOffer.classList.add('active')
+    chosenOffer.classList.add("active");
     const offerPrice = parseFloat(currentBtn.dataset.price);
     hiddenOfferPrice = offerPrice;
     bundlesPrice = parseFloat(addBundlesPrice.textContent);
@@ -191,21 +180,18 @@ let lastAccordion = document.body;
 
 accordionList.forEach((item) => {
   item.addEventListener("click", (e) => {
-
     const clickedAccordion = e.target.closest(".accordion-box");
-    const panel = clickedAccordion.querySelector('.panel')
-    if(clickedAccordion.classList.contains('active')){
-      clickedAccordion.classList.remove('active')
-      panel.style.maxHeight = '0px'
-    }else{
+    const panel = clickedAccordion.querySelector(".panel");
+    if (clickedAccordion.classList.contains("active")) {
+      clickedAccordion.classList.remove("active");
+      panel.style.maxHeight = "0px";
+    } else {
       accordionList.forEach((item) => {
         item.classList.remove("active");
-        item.querySelector('.panel').style.maxHeight = '0px'
+        item.querySelector(".panel").style.maxHeight = "0px";
       });
-      clickedAccordion.classList.add('active')
-      panel.style.maxHeight = panel.scrollHeight + 'px'
+      clickedAccordion.classList.add("active");
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
-
+  });
 });
-})
-
